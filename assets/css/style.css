@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    background-image: url("../images/stars.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#headContainer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 2;
+    color: white;
+}
+
+#bodyContainer {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.bkgdDiv {
+    height: 10vw;
+    width: 10vw;
+    background-color: black;
+    border: 2px yellow;
+}
+
+#test {
+    color: white;
+}
