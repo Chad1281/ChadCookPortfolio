@@ -5,12 +5,14 @@
 console.log(projectLinks);
 projectLinks.forEach(function(element) {
     console.log(element);
+    var cardEl = $("<div>").addClass("card");
     var cardImgEl = $("<img>").addClass("card-img").attr("src", element.image);
     var cardUrlEl = $("<a>").addClass("card-url").attr("href", element.url);
     var cardTitleEl = $("<div>").addClass("card-title").text(element.title);
     var cardDescEl = $("<div>").addClass("card-desc").text(element.description);
 
-    $(".card").append(cardUrlEl);
+    $(".cardContainer").append(cardEl);
+    $(cardEl).append(cardUrlEl);
     $(cardUrlEl).append(cardImgEl);
     $(cardUrlEl).append(cardTitleEl);
     $(cardUrlEl).append(cardDescEl);
