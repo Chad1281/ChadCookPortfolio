@@ -3,7 +3,7 @@ const projectLinks = [
         image: "./assets/images/monnaie.png",
         url: "https://salty-forest-71574.herokuapp.com/",
         title: "Monnaie Wedding Planner",
-        description: "Monnaie is an app to help newly engaged couples plan the perfect wedding. Each your will be to save and keep track of their budget and compare their planned cost with actual cost. They can break their budget down into categories and add items to each category. They are also able to schedule task with a due date and mark the task complete as they are completed."
+        description: "Monnaie is an app to help newly engaged couples plan the perfect wedding. Each user will be to save and keep track of their budget and compare their planned cost with actual cost. They can break their budget down into categories and add items to each category. They are also able to schedule task with a due date and mark the task complete as they are completed."
     }, {
         image: "./assets/images/served.png",
         url: "https://chad1281.github.io/served/",
@@ -27,7 +27,7 @@ const projectLinks = [
     }, {
         image: "./assets/images/budget.png",
         url: "https://chad-online-offline-budget.herokuapp.com/",
-        title: "Online/Offline Budget Tracker",
+        title: "Online Offline Budget Tracker",
         description: "Rather you have an internet connection or not the online/offline budget tracker will let you add deposits and purhases to so you always know how much money you have to spend."
     },
 ]

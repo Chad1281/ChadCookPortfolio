@@ -1,9 +1,10 @@
 body {
     margin: 0;
+    background-color: rgb(105, 105, 105);
     background-image: url("../images/stars.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    z-index: 12;
+    /* z-index: 12; */
 }
 
 header {
@@ -11,54 +12,84 @@ header {
     width: 100vw;
     height: 5vh;
     /* background-color: blue; */
-    position: sticky;
-    position: -webkit-sticky;
-    z-index: 11;
+    /* position: sticky;
+    position: -webkit-sticky; */
+    /* z-index: 11; */
     position: fixed;
     top: 0;
     background: inherit;
 }
 
-
-#headContainer {
-    margin: 0;
-    padding: 0;
+.container {
     display: flex;
+    flex-direction: row;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 5vw;
+    min-width: 40px;
+    height: 75vh;
+    /* min-height: 550px; */
+    border-top: 3px solid blue;
+    border-right: 3px solid blue;
+    box-shadow: 2px -2px 0 rgba(1, 1, 114, 0.753);
+    border-radius: 0 5vw 0 0;
+    background-color: rgb(56, 56, 56);
+    bottom: 0;
+    position: fixed;
+    overflow: hidden;
+    /* background: inherit; */    
     z-index: 2;
-    color: white;
 }
 
-#bodyContainer {
-    margin: 0;
-    padding: 0;
-    z-index: 3;
+.links h3 {
+    margin-top: 10vh;
+    margin-left: 5px;
+    align-self: initial;
+    margin-bottom: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    /* writing-mode: vertical-rl; */
+    color: rgb(4, 161, 252);
 }
 
-.bkgdDiv {
-    height: 10vw;
-    width: 10vw;
-    background-color: black;
-    border: 2px yellow;
+.imgLinks  {
+    margin: 0px 10px 0px 10px;
+    width: 3vw;
+    min-width: 25px
 }
 
-#test {
-    color: white;
+#headshot {
+    width: 5vw;
+    min-width: 40px;
+    align-self: center;
+    background: inherit;
+}
+
+h1 {
+    color: cyan;
+    font-size: 4rem;
+    text-align: center;
 }
 
 .cardContainer {
     margin: 15vh 0 25vh 0;
-    overflow: hidden;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .card {
-    margin: 10vh auto 0 auto;
+    margin: 5vh auto 15vh auto;
     width: 55vw;
     max-width: 75vw;
     height: auto;
     background-color: rgb(2, 96, 112);
     border: 4px solid cyan;
     border-radius: 10px;
-    z-index: 6;
+    /* z-index: 6; */
     box-shadow: 0 0 1px 1px rgb(153, 252, 252);
 }
 
@@ -87,3 +118,23 @@ header {
     color: rgb(246, 255, 255);
     text-shadow: 0 0 1px rgb(45, 236, 250);
 }
+
+footer {
+    margin: 0;
+    width: 100vw;
+    height: 15vh;
+    background: inherit;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1400px) {
+    .links h3 {
+        margin-left: 35px;
+        writing-mode: vertical-rl;
+        font-size: 1.8rem;
+    }
+  }
+
+  
