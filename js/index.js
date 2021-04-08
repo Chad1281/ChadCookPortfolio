@@ -40,5 +40,14 @@ function printText() {
 
     function printDesc() {
         document.getElementById("aboutDesc").innerHTML += myDesc;
+        setTimeout(appendDown, 500);
+    }
+
+    function appendDown() {        
+        var downArrow = $("<a>").attr("href", "#projects");
+        var downArrowImg = $("<img>").attr("src", "./assets/images/down.png");        
+
+        $("#down").append(downArrow);
+        $(downArrow).append(downArrowImg);
     }
 }
