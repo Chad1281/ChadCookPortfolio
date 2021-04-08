@@ -4,6 +4,7 @@ body {
     background-image: url("../images/stars.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 header {
@@ -19,16 +20,16 @@ header {
 }
 
 nav {
-    margin-right: 5px;
+    margin-right: 8px;
     padding: 10px 15px 5px 0;
     text-align: center;   
 }
 
 nav a {
-    margin-right: 2px;
-    border-right: 1px solid rgb(187, 1, 103);
+    margin-right: -4px;
+    border-right: 2px solid rgb(187, 1, 103);
     border-left: 1px solid rgb(187, 1, 103); 
-    border-bottom: 1px solid rgb(153, 1, 47);
+    border-bottom: 2px solid rgb(153, 1, 47);
     background-color: rgb(250, 3, 106);
     color: rgb(14, 0, 0);
     text-decoration: none;
@@ -214,6 +215,8 @@ h1 {
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
     margin: 0;
     width: 100vw;
     height: 15vh;
@@ -221,6 +224,11 @@ footer {
     position: fixed;
     z-index: 1;
     bottom: 0;
+}
+
+footer img {
+    height: 13vh;
+    margin: 20px 1vw 0 0;
 }
 
 @media screen and (max-width: 1400px) {

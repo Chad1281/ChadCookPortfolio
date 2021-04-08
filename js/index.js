@@ -10,7 +10,7 @@ projectLinks.forEach(function(element) {
     var cardTitleEl = $("<div>").addClass("card-title").text(element.title);
     var cardDescEl = $("<div>").addClass("card-desc").text(element.description);
 
-    $("#projects").append(cardEl);
+    $("#projectCards").append(cardEl);
     $(cardEl).append(cardUrlEl);
     $(cardUrlEl).append(cardImgEl);
     $(cardUrlEl).append(cardGhEl);
