@@ -4,25 +4,64 @@ body {
     background-image: url("../images/stars.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* z-index: 12; */
 }
 
 header {
     margin: 0;
     width: 100vw;
     height: 5vh;
-    /* background-color: blue; */
-    /* position: sticky;
-    position: -webkit-sticky; */
-    /* z-index: 11; */
     position: fixed;
     top: 0;
     background: inherit;
 }
 
+nav {
+    display: flex; 
+    justify-content: flex-end;
+    margin-right: 5px;
+    padding: 10px 15px 5px 0;
+    text-align: center;
+   
+}
+
+nav a {
+    margin-right: 2px;
+    border-right: 1px solid rgb(187, 1, 103);
+    border-left: 1px solid rgb(187, 1, 103); 
+    border-bottom: 1px solid rgb(153, 1, 47);
+    background-color: rgb(250, 3, 106);
+    color: rgb(14, 0, 0);
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 0px 0px 12px 6px;
+}
+
+.spacer {
+    width: 100vw;
+    height: 1px;
+}
+
 .container {
     display: flex;
     flex-direction: row;
+}
+
+#about {
+    margin: 15vh auto 5vh auto;
+    width: 55vw;
+    height: 65vh;
+}
+
+#aboutName {
+    font-size: 4rem;
+    color: rgb(60, 199, 35);
+    text-align: center;
+}
+
+#aboutDesc {
+    font-size: 2rem;
+    color: rgb(60, 199, 35);
+    text-align: center;
 }
 
 .links {
@@ -32,7 +71,6 @@ header {
     width: 5vw;
     min-width: 40px;
     height: 75vh;
-    /* min-height: 550px; */
     border-top: 3px solid blue;
     border-right: 3px solid blue;
     box-shadow: 2px -2px 0 rgba(1, 1, 114, 0.753);
@@ -40,8 +78,7 @@ header {
     background-color: rgb(56, 56, 56);
     bottom: 0;
     position: fixed;
-    overflow: hidden;
-    /* background: inherit; */    
+    overflow: hidden;   
     z-index: 2;
 }
 
@@ -52,7 +89,6 @@ header {
     margin-bottom: 0;
     font-size: 1.8rem;
     font-weight: bold;
-    /* writing-mode: vertical-rl; */
     color: rgb(4, 161, 252);
 }
 
@@ -69,7 +105,12 @@ header {
     background: inherit;
 }
 
+#projects {
+    margin-top: 10vh;
+}
+
 h1 {
+    margin-top: 15vh;
     color: cyan;
     font-size: 4rem;
     text-align: center;
@@ -86,11 +127,33 @@ h1 {
     width: 55vw;
     max-width: 75vw;
     height: auto;
+}
+
+.cyan-theme {
+    color: rgb(246, 255, 255);
     background-color: rgb(2, 96, 112);
     border: 4px solid cyan;
     border-radius: 10px;
-    /* z-index: 6; */
     box-shadow: 0 0 1px 1px rgb(153, 252, 252);
+    text-shadow: 0 0 1px rgb(45, 236, 250);
+}
+
+.magenta-theme {
+    color: rgb(255, 238, 255);
+    background-color: rgb(75, 1, 75);
+    border: 4px solid magenta;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 1px rgb(253, 138, 253);
+    text-shadow: 0 0 1px rgb(255, 66, 255);
+}
+
+.gray-theme {
+    color: rgb(226, 226, 226);
+    background-color: rgb(59, 59, 59);
+    border: 4px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 1px rgb(182, 182, 182);
+    text-shadow: 0 0 1px rgb(146, 146, 146);
 }
 
 .card-img {
@@ -100,23 +163,52 @@ h1 {
     border-radius: 6px 6px 0 0;
 }
 
+.card-gh {
+    width: 55vw;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-gh-img {
+    margin: auto;
+    align-self: center;
+    width: 40px;
+    height: auto;
+}
+
 .card-title {
     margin-top: 10px;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
+    text-shadow: 0 0 1px inherit;
 }
 
 .card-desc {
     padding: 5px 20px 15px 20px;
     font-size: 1.2rem;
-    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    text-shadow: 0 0 1px inherit;
 }
 
 .card-url {
     text-decoration: none;
-    color: rgb(246, 255, 255);
-    text-shadow: 0 0 1px rgb(45, 236, 250);
+    color: inherit;
+    text-shadow: 0 0 1px inherit;
+}
+
+#resume {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#resumeImg {
+    width: 10vw;
+    margin: 20px;
 }
 
 footer {
