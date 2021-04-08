@@ -254,4 +254,8 @@ footer img {
     .card-desc {
         font-size: 1rem;
     }
+
+    nav a {
+        font-size: 1rem;
+    }
   }
