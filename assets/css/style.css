@@ -216,7 +216,7 @@ h1 {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin: 0;
     width: 100vw;
     height: 15vh;

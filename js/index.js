@@ -19,11 +19,11 @@ projectLinks.forEach(function(element) {
     $(cardUrlEl).append(cardDescEl);
 })
 
-setTimeout(printText, 2000);
+setTimeout(printText, 1000);
 
 function printText() {
     const myName = ["H", "i", ",", " ", "m", "y", " ",  "n", "a", "m", "e", " ",  "i", "s", " ", "C", "h", "a", "d", "."];
-    const myDesc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    const myDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae purus cursus, vulputate augue sed, mattis dolor. Mauris vitae ultrices metus. Fusce id mollis elit. Sed iaculis erat urna, viverra scelerisque erat ultricies vel. Duis aliquam augue vitae placerat rhoncus. Nam dictum mi eu quam feugiat, a vestibulum est mollis. Quisque eu tortor purus. Nulla non justo erat. Duis convallis turpis nec dui maximus venenatis. Aenean luctus velit purus, ac sollicitudin purus volutpat ac. Phasellus tempor non nibh sed venenatis. Aliquam tempor fringilla erat, eu imperdiet arcu tincidunt quis. Suspendisse tempus, turpis ut accumsan sagittis, nulla justo blandit ipsum, nec pellentesque mi est nec lectus. Nullam molestie tortor ut nulla egestas, in viverra dolor cursus. Donec mattis consequat tincidunt."
     
     var i = 0;
 
