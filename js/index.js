@@ -4,8 +4,8 @@ projectLinks.forEach(function(element) {
     console.log(element);
     var cardEl = $("<div>").addClass("card cyan-theme");
     var cardImgEl = $("<img>").addClass("card-img").attr("src", element.image);
-    var cardUrlEl = $("<a>").addClass("card-url").attr({href: element.url, target: _blank});
-    var cardGhEl = $("<a>").addClass("card-gh").attr({href: element.github, target: _blank});
+    var cardUrlEl = $("<a>").addClass("card-url").attr("href", element.url, "target", "_blank");
+    var cardGhEl = $("<a>").addClass("card-gh").attr("href", element.github, "target", "_blank");
     var cardGhImgEl = $("<img>").addClass("card-gh-img").attr("src", "./assets/images/GitHub.png");
     var cardTitleEl = $("<div>").addClass("card-title").text(element.title);
     var cardDescEl = $("<div>").addClass("card-desc").text(element.description);
