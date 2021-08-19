@@ -19,7 +19,7 @@ const projectLinks = [
         description: "Save all of your employees information with a their picture with this employee directory. You can search employees by their name or sort them by their name, location, or country."
     }, {
         image: "./assets/images/burger.png",
-        url: "https://whispering-brook-47197.herokuapp.com/",
+        url: "https://chad-burger-chomper.herokuapp.com/",
         github: "https://github.com/Chad1281/burger",
         title: "Burger Chomper",
         description: "What better than a way to add burgers that you would like to try and keep track of the ones that you're able to eat. Burger Chomper lets you add a burger name and mark which ones that you have devoured."
